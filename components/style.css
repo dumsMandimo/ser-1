@@ -1,0 +1,32 @@
+.App{
+    height: 100vh;
+    width: 100vw;
+}
+
+.map-container{
+    height:100%;
+    width:100% ;
+}
+
+/* Styling for the TimeInput component */
+.custom-time-picker input {
+    border: 1px solid lightgray !important; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 8px; /* Space around the text */
+    font-size: 16px; /* Font size for better readability */
+    background-color: white; /* White background */
+  }
+  
+  /* Optional hover and focus states */
+  .custom-time-picker input:hover,
+  .custom-time-picker input:focus {
+    border-color: gray !important; /* Darker border on hover/focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Label styling if needed */
+  .custom-time-picker label {
+    font-weight: bold;
+    color: #333;
+  }
+  

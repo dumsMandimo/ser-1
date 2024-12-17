@@ -67,10 +67,30 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        // New keyframes for gradient and shine
+        "gradient-x": {
+          '0%, 100%': { 
+            'background-position': '0% 50%' 
+          },
+          '50%': { 
+            'background-position': '100% 50%' 
+          }
+        },
+        "shine": {
+          '0%': { 
+            transform: 'translateX(-100%) rotate(45deg)' 
+          },
+          '100%': { 
+            transform: 'translateX(100%) rotate(45deg)' 
+          }
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        // New animations
+        "gradient-x": "gradient-x 5s ease infinite",
+        "shine": "shine 1.5s ease-in-out infinite"
       },
     },
   },
